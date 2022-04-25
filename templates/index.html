@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SiriCoin faucet</title>
+    </head>
+    <body>
+        <form method="post" action="/claim">
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address"><br>
+            {{ hcaptcha|safe }}
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
