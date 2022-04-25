@@ -15,7 +15,7 @@ con.commit()
 con.close()
 
 app = Flask(__name__)
-hcaptcha = hCaptcha(app, site_key="b5d4f8a3-6700-4d93-a23b-ba1e2a230f63", secret_key="0x4f5de13bB30963Df26f3E639E7272277C9253a79", is_enabled=True)
+hcaptcha = hCaptcha(app, site_key="b5d4f8a3-6700-4d93-a23b-ba1e2a230f63", secret_key="XXXXXXXXXXXXXXXXXXXXX", is_enabled=True)
 
 @app.route("/")
 def index():
